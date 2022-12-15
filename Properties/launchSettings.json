@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "PushToMute.WinUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PushToMute.WinUI (Unpackaged)": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
