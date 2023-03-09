@@ -40,6 +40,17 @@ namespace PushToMute.WinUI
             Services = ConfigureServices();
             LoadSettings();
             this.InitializeComponent();
+
+            var hideHotkey = new Keybind(Services.GetRequiredService<IKeyboardListener>(), VKey.LCONTROL, VKey.DOWN);
+            hideHotkey.KeybindPressed += HideHotkey_KeybindPressed;
+        }
+
+        private void HideHotkey_KeybindPressed(object sender, EventArgs e)
+        {
+            if (MainWindow.Visible)
+                MainWindow.Hide();
+            else
+                MainWindow.Show();
         }
 
         public IServiceProvider ConfigureServices()

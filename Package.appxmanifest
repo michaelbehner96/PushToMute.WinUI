@@ -8,7 +8,7 @@
   IgnorableNamespaces="uap rescap iot">
 
   <Identity
-    Name="7f39f9b8-402b-410c-8b71-210ded754ebb"
+    Name="sharkbytes.pushtomute"
     Publisher="CN=micha"
     Version="1.0.1.0" />
 
